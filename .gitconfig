@@ -1,0 +1,25 @@
+[alias]
+	getoverhere = pull --rebase
+[diff]
+    tool = DiffMerge
+[difftool "DiffMerge"]
+    cmd = 'C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe' "$LOCAL" "$REMOTE"
+[merge]
+    tool = DiffMerge
+[mergetool "DiffMerge"]
+    cmd = 'C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe' -merge -result="$PWD/$MERGED" "$PWD/$LOCAL" "$PWD/$BASE" "$PWD/$REMOTE"
+    trustExitCode = true
+[mergetool]
+    keepBackup = false 
+[core]
+    editor = 'C:/Program Files (x86)/Notepad++/notepad++.exe'
+[core]
+	autocrlf = true
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+
+
